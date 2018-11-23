@@ -11,5 +11,5 @@ def add_or_remove_cash(pet_shop_hash,cash)
 end
 
 def pets_sold(sold)
-
+sold[:admin][:pets_sold]
 end
