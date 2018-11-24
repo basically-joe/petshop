@@ -48,3 +48,8 @@ end
 def customer_pet_count(customer_hash)
 return customer_hash[:pets].count
 end
+
+#17
+def add_pet_to_customer(customer_hash, new_pet)
+return customer_hash[:pets] << new_pet
+end
