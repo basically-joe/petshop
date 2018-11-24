@@ -25,3 +25,9 @@ end
 # def pets_by_breed(pet_shop_hash, pets)
 #
 # end
+
+#ex13
+
+def add_pet_to_stock(pet_shop_hash, new_pet)
+  pet_shop_hash[:pets] << new_pet
+end
