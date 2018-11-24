@@ -27,7 +27,7 @@ end
 
 def pets_by_breed(pet_shop_hash, pet_breed)
   breed_count = []
-  pet_shop_hash[:pets].select
+  pet_shop_hash[:pets].select { | pet | breed_count << pet if pet[:breed] == pet_breed}
   return breed_count
 end
 
