@@ -41,7 +41,11 @@ end
 
 #ex11
 
-
+def find_pet_by_name(pet_shop_hash, pet_name)
+  name_count = nil
+  pet_shop_hash[:pets].each { | pet | name_count = pet if pet[:name] == pet_name}
+return name_count
+end
 
 #ex12
 
