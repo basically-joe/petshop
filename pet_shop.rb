@@ -34,6 +34,13 @@ end
 
 #ex14
 
-def customer_cash(cash)
-  
+def customer_cash(customer)
+  return customer[:cash]
 end
+
+#ex15
+def remove_customer_cash(customer_hash, cash)
+return customer_hash[:cash] -= cash
+end
+
+#16
