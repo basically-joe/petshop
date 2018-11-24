@@ -31,13 +31,13 @@ def pets_by_breed(pet_shop_hash, pet_breed)
   return breed_count
 end
 
-#ex10
-
-def find_pet_by_name(pet_shop_hash, pet_name)
-  name_count = []
-  pet_shop_hash[:pets].each { | pet | name_count = pet if pet[:name] == pet_name}
-return name_count
-end
+# #ex10
+#
+# def find_pet_by_name(pet_shop_hash, pet_name)
+#   name_count = []
+#   pet_shop_hash[:pets].each { | pet | name_count = pet if pet[:name] == pet_name}
+# return name_count
+# end
 
 #ex11
 
