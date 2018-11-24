@@ -25,25 +25,29 @@ end
 #ex8 Didnt fully understand how to count specific pets by breed
 #and return a number
 
-# def pets_by_breed(pet_shop_hash, pets)
-#   breed_count = []
-#   for pets in pet_shop_hash
-#     if pet_shop_hash[:pets][:breed].to_i == pets
-#       breed_count.push(pets)
-#   end
-# end
-#   return breed_count
-# end
+def pets_by_breed(pet_shop_hash, pet_breed)
+  breed_count = []
+  pet_shop_hash[:pets].select
+  return breed_count
+end
 
 #ex9
 
 #ex10
 
-def find_pet_by_name(pet_shop_hash, pet_name)
-
-end
+# def find_pet_by_name(pet_shop_hash, pet_name)
+#   name_found = []
+#   for pet_name in pet_shop_hash
+#     if pet_shop_hash[:pets] == "Arthur"
+#       name_found.push(pet_name)
+#     end
+#   end
+#   return name_found
+# end
 
 #ex11
+
+
 
 #ex12
 
