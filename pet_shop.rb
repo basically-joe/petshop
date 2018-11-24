@@ -49,7 +49,8 @@ end
 
 #ex12
 
-
+def remove_pet_by_name(pet_shop_hash, pet_name)
+end
 
 #ex13
 
