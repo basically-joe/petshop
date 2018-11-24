@@ -46,5 +46,5 @@ end
 #16
 
 def customer_pet_count(customer_hash)
-
+return customer_hash[:pets].count
 end
