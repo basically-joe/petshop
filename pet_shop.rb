@@ -31,3 +31,9 @@ end
 def add_pet_to_stock(pet_shop_hash, new_pet)
   pet_shop_hash[:pets] << new_pet
 end
+
+#ex14
+
+def customer_cash(cash)
+  
+end
