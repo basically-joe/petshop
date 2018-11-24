@@ -22,7 +22,7 @@ def stock_count(count)
   return count[:pets].count
 end
 
-#ex8 Didnt fully understand how to count specific pets by breed
+#ex8 & ex9 Didnt fully understand how to count specific pets by breed
 #and return a number
 
 def pets_by_breed(pet_shop_hash, pet_breed)
@@ -32,6 +32,8 @@ def pets_by_breed(pet_shop_hash, pet_breed)
 end
 
 #ex9
+
+
 
 #ex10
 
