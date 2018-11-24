@@ -50,6 +50,7 @@ end
 #ex12
 
 def remove_pet_by_name(pet_shop_hash, pet_name)
+  pet_shop_hash[:pets].each_with_index  { | pet, index | pet_shop_hash[:pets].delete_at(index) if pet[:name] == pet_name }
 end
 
 #ex13
