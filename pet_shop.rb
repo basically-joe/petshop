@@ -44,3 +44,7 @@ return customer_hash[:cash] -= cash
 end
 
 #16
+
+def customer_pet_count(customer_hash)
+
+end
