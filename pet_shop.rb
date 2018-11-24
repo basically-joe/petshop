@@ -23,7 +23,7 @@ def stock_count(count)
 end
 
 #ex8 & ex9 Didnt fully understand how to count specific pets by breed
-#and return a number
+#and return a number. looked up .select in Ruby docs and how to use functionality
 
 def pets_by_breed(pet_shop_hash, pet_breed)
   breed_count = []
@@ -31,21 +31,13 @@ def pets_by_breed(pet_shop_hash, pet_breed)
   return breed_count
 end
 
-#ex9
-
-
-
 #ex10
 
-# def find_pet_by_name(pet_shop_hash, pet_name)
-#   name_found = []
-#   for pet_name in pet_shop_hash
-#     if pet_shop_hash[:pets] == "Arthur"
-#       name_found.push(pet_name)
-#     end
-#   end
-#   return name_found
-# end
+def find_pet_by_name(pet_shop_hash, pet_name)
+  name_count = nil
+  pet_shop_hash[:pets].each { | pet | name_count = pet if pet[:name] == pet_name}
+return name_count
+end
 
 #ex11
 
