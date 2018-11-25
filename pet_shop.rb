@@ -128,3 +128,11 @@ which pushes that pet into the pets array.
 def add_pet_to_customer(customer_hash, new_pet)
   return customer_hash[:pets] << new_pet
 end
+
+=begin
+ex18 arguments of customer and pet hashes and returns if customer can afford pet
+=end
+
+def customer_can_afford_pet(customer_hash, pet_shop_hash)
+
+end
