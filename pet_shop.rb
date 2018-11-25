@@ -130,7 +130,7 @@ def add_pet_to_customer(customer_hash, new_pet)
 end
 
 =begin
-ex18 accepts arguments of customer and pet hashes
+ex18 & ex19 accepts arguments of customer and pet hashes
 and returns true if customer can afford pet or not (false)
 =end
 
