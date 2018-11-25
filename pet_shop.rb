@@ -145,3 +145,7 @@ end
 =begin
 ex20 accepts 3 arguments of customer, pet shop hashes and new pet
 =end
+
+def sell_pet_to_customer(pet_shop_hash, new_pet, customer_hash)
+  
+end
