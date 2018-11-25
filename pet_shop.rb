@@ -141,3 +141,7 @@ def customer_can_afford_pet(customer_hash, pet_shop_hash)
     return false
   end
 end
+
+=begin
+ex20 accepts 3 arguments of customer, pet shop hashes and new pet
+=end
