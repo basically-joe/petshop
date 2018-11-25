@@ -130,9 +130,14 @@ def add_pet_to_customer(customer_hash, new_pet)
 end
 
 =begin
-ex18 arguments of customer and pet hashes and returns if customer can afford pet
+ex18 accepts arguments of customer and pet hashes
+and returns true if customer can afford pet or not (false)
 =end
 
 def customer_can_afford_pet(customer_hash, pet_shop_hash)
-
+  if customer_hash[:cash] >= pet_shop_hash[:price]
+    return true
+  else
+    return false
+  end
 end
