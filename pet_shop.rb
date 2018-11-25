@@ -52,7 +52,7 @@ end
 
 =begin
 ex8, 9, 10, 11, 12 Didnt fully understand these exercises.
-looked up .select in Ruby docs and how to use functionality.
+looked up .select .each in Ruby docs and how to use functionality.
 
 ex8 & ex9 created function with 2 arguments of the petshop data and breed
 which returns how many of that breed exists
@@ -147,5 +147,11 @@ ex20 accepts 3 arguments of customer, pet shop hashes and new pet
 =end
 
 def sell_pet_to_customer(pet_shop_hash, new_pet, customer_hash)
-  
-end
+    if customer_can_afford_pet(customer_hash, new_pet)
+      remove_pet_by_name(pet_shop_hash, new_pet[:name])
+      add_pet_to_customer(customer_hash, new_pet)
+      remove_customer_cash(customer_hash, new_pet[:price])
+      increase_pets_sold(pet_shop_hash, 1)
+      add_or_remove_cash(pet_shop_hash,new_pet[:price])
+    end
+  end
