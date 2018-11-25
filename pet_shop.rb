@@ -134,8 +134,8 @@ ex18 & ex19 accepts arguments of customer and pet hashes
 and returns true if customer can afford pet or not (false)
 =end
 
-def customer_can_afford_pet(customer_hash, pet_shop_hash)
-  if customer_hash[:cash] >= pet_shop_hash[:price]
+def customer_can_afford_pet(customer_hash, pet)
+  if customer_hash[:cash] >= pet[:price]
     return true
   else
     return false
@@ -143,14 +143,16 @@ def customer_can_afford_pet(customer_hash, pet_shop_hash)
 end
 
 =begin
-ex20, 22, 23 accepts 3 arguments of customer, pet shop hashes and new pet hash
+ex20, 21, 22 accepts 3 arguments of customer, pet shop hashes and new pet hash
 if the customer can afford a pet then it'll check if pet available
 if it is then it removes that pet by name, removes the customer total_cash
-increases the pets sold and adds the applicable cash amount
+increases the pets sold and adds the applicable cash amount.UNable to solve
+from expected 50 actual returning nil.
 =end
 
 def sell_pet_to_customer(pet_shop_hash, new_pet, customer_hash)
   if new_pet != nil
+    if customer_can_afford_pet(customer_hash, new_pet)
       remove_pet_by_name(pet_shop_hash, new_pet[:name])
       add_pet_to_customer(customer_hash, new_pet)
       remove_customer_cash(customer_hash, new_pet[:price])
@@ -158,3 +160,4 @@ def sell_pet_to_customer(pet_shop_hash, new_pet, customer_hash)
       add_or_remove_cash(pet_shop_hash,new_pet[:price])
     end
   end
+end
