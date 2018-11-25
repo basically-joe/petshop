@@ -143,8 +143,10 @@ def customer_can_afford_pet(customer_hash, pet_shop_hash)
 end
 
 =begin
-ex20 accepts 3 arguments of customer, pet shop hashes and new pet hash
-if the customer can afford a pet then it'll check if
+ex20, 22, 23 accepts 3 arguments of customer, pet shop hashes and new pet hash
+if the customer can afford a pet then it'll check if pet available
+if it is then it removes that pet by name, removes the customer total_cash
+increases the pets sold and adds the applicable cash amount
 =end
 
 def sell_pet_to_customer(pet_shop_hash, new_pet, customer_hash)
